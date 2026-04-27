@@ -7,8 +7,8 @@ if __name__ == "__main__":
     parser.add_argument("--cpu", type=str, default="TimingSimpleCPU", help="CPU Type")
     parser.add_argument("--l1", type=str, default="128kB", help="L1 Cache Size")
     parser.add_argument("--l2", type=str, default="1MB", help="L2 Cache Size")
-    parser.add_argument("--l1_assoc", type=int, default=2, help="Associativity")
-    parser.add_argument("--l2_assoc", type=int, default=1, help="Associativity")
+    parser.add_argument("--l1_assoc", type=int, default=2, help="L1 Associativity")
+    parser.add_argument("--l2_assoc", type=int, default=1, help="L2 Associativity")
     parser.add_argument("--MAX_INST", type=int, default=100000000, help="Maximum Instructions")
     
     args = parser.parse_args()

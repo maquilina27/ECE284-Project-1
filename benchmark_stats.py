@@ -20,7 +20,6 @@ def process_stats(file_path):
             for key, pattern in patterns.items():
                 match = re.search(pattern, content)
                 if match:
-                    # USE FLOAT HERE. It handles 100, 0.05, and 1.2e-5 perfectly.
                     data[key] = float(match.group(1))
                 else:
                     data[key] = 0.0
@@ -29,13 +28,9 @@ def process_stats(file_path):
         if data.get('Total_Inst', 0) == 0:
             return "Error: simInsts is 0 or missing. Check if the simulation ran."
 
-        # Calculation logic
-        # Penalty = (Misses * Latency)
         l1_penalty = (data['IL1_miss_count'] + data['DL1_miss_count']) * 6
         l2_penalty = data['L2_miss_count'] * 50
         
-        # CPI = Base CPI (1) + (Total Penalty / Total Instructions)
-        # Note: Added 1.0 to ensure float division
         cpi = 1.0 + ((l1_penalty + l2_penalty) / data['Total_Inst'])
         
         return {
@@ -60,6 +55,5 @@ for model in model_type:
     if isinstance(result, dict):
         print(f"Path: {filepath}")
         print(f"CPI: {result['Calculated CPI']}")
-        print(f"L2_mr: {result['Extracted Data']['L2_miss_rate']}")
     else:
         print(result)
