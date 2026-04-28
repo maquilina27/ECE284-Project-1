@@ -1,0 +1,34 @@
+warn: The `get_runtime_isa` function is deprecated. Please migrate away from using this function.
+warn: The se.py script is deprecated. It will be removed in future releases of  gem5.
+warn: The `get_runtime_isa` function is deprecated. Please migrate away from using this function.
+Global frequency set at 1000000000000 ticks per second
+warn: No dot file generated. Please install pydot to generate the dot file and pdf.
+src/mem/dram_interface.cc:690: warn: DRAM device capacity (8192 Mbytes) does not match the address range assigned (512 Mbytes)
+src/base/statistics.hh:279: warn: One of the stats is a legacy stat. Legacy stat is a stat that does not belong to any statistics::Group. Legacy stat is deprecated.
+system.remote_gdb: Listening for connections on port 7000
+gem5 Simulator System.  https://www.gem5.org
+gem5 is copyrighted software; use the --copyright option for details.
+
+gem5 version 23.0.0.1
+gem5 compiled Apr  1 2026 17:16:19
+gem5 started Apr 27 2026 21:53:22
+gem5 executing on vbox, pid 4340
+command line: /home/casp26p1/gem5/build/X86/gem5.opt -d /home/casp26p1/Downloads/Project1_SPEC-master/results_corners/456.hmmer/small_assoc /home/casp26p1/gem5/configs/deprecated/example/se.py -c /home/casp26p1/Downloads/Project1_SPEC-master/456.hmmer/src/benchmark -o /home/casp26p1/Downloads/Project1_SPEC-master/456.hmmer/data/bombesin.hmm.new -I 100000000 --cpu-type=TimingSimpleCPU --caches --l2cache --l1d_size=32kB --l1i_size=32kB --l2_size=512kB --l1d_assoc=4 --l1i_assoc=4 --l2_assoc=4 --cacheline_size=64
+
+**** REAL SIMULATION ****
+src/sim/simulate.cc:194: info: Entering event queue @ 0.  Starting simulation...
+src/sim/mem_state.cc:443: info: Increasing stack size by one page.
+hmmcalibrate -- calibrate HMM search statistics
+HMMER 2.3 (May 2003)
+Copyright (C) 1992-2003 HHMI/Washington University School of Medicine
+Freely distributed under the GNU General Public License (GPL)
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+HMM file:                 /home/casp26p1/Downloads/Project1_SPEC-master/456.hmmer/data/bombesin.hmm.new
+Length distribution mean: 325
+Length distribution s.d.: 200
+Number of samples:        5000
+random seed:              1000000000
+histogram(s) saved to:    [not saved]
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Exiting @ tick 192064890000 because a thread reached the max instruction count

@@ -1,0 +1,33 @@
+warn: The `get_runtime_isa` function is deprecated. Please migrate away from using this function.
+warn: The se.py script is deprecated. It will be removed in future releases of  gem5.
+warn: The `get_runtime_isa` function is deprecated. Please migrate away from using this function.
+Global frequency set at 1000000000000 ticks per second
+warn: No dot file generated. Please install pydot to generate the dot file and pdf.
+src/mem/dram_interface.cc:690: warn: DRAM device capacity (8192 Mbytes) does not match the address range assigned (512 Mbytes)
+src/base/statistics.hh:279: warn: One of the stats is a legacy stat. Legacy stat is a stat that does not belong to any statistics::Group. Legacy stat is deprecated.
+system.remote_gdb: Listening for connections on port 7000
+gem5 Simulator System.  https://www.gem5.org
+gem5 is copyrighted software; use the --copyright option for details.
+
+gem5 version 23.0.0.1
+gem5 compiled Apr  1 2026 17:16:19
+gem5 started Apr 27 2026 21:34:45
+gem5 executing on vbox, pid 4038
+command line: /home/casp26p1/gem5/build/X86/gem5.opt -d /home/casp26p1/Downloads/Project1_SPEC-master/results_corners/401.bzip2/small_direct /home/casp26p1/gem5/configs/deprecated/example/se.py -c /home/casp26p1/Downloads/Project1_SPEC-master/401.bzip2/src/benchmark -o /home/casp26p1/Downloads/Project1_SPEC-master/401.bzip2/data/input.program -I 100000000 --cpu-type=TimingSimpleCPU --caches --l2cache --l1d_size=32kB --l1i_size=32kB --l2_size=512kB --l1d_assoc=1 --l1i_assoc=1 --l2_assoc=1 --cacheline_size=64
+
+**** REAL SIMULATION ****
+src/sim/simulate.cc:194: info: Entering event queue @ 0.  Starting simulation...
+src/sim/mem_state.cc:443: info: Increasing stack size by one page.
+spec_init
+Loading Input Data
+Duplicating 8070616 bytes
+build/X86/arch/x86/generated/exec-ns.cc.inc:27: warn: instruction 'prefetch_nta' unimplemented
+build/X86/arch/x86/generated/exec-ns.cc.inc:27: warn: instruction 'prefetch_nta' unimplemented
+src/arch/generic/debugfaults.hh:145: warn: MOVNTI: Ignoring non-temporal hint, modeling as cacheable!
+Duplicating 16141232 bytes
+Duplicating 32282464 bytes
+Duplicating 2543936 bytes
+Input data 67108864 bytes in length
+Compressing Input Data, level 5
+src/sim/mem_state.cc:443: info: Increasing stack size by one page.
+Exiting @ tick 392995267500 because a thread reached the max instruction count

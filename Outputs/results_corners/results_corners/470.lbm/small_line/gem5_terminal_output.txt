@@ -1,0 +1,62 @@
+warn: The `get_runtime_isa` function is deprecated. Please migrate away from using this function.
+warn: The se.py script is deprecated. It will be removed in future releases of  gem5.
+warn: The `get_runtime_isa` function is deprecated. Please migrate away from using this function.
+Global frequency set at 1000000000000 ticks per second
+warn: No dot file generated. Please install pydot to generate the dot file and pdf.
+src/mem/dram_interface.cc:690: warn: DRAM device capacity (8192 Mbytes) does not match the address range assigned (512 Mbytes)
+src/base/statistics.hh:279: warn: One of the stats is a legacy stat. Legacy stat is a stat that does not belong to any statistics::Group. Legacy stat is deprecated.
+system.remote_gdb: Listening for connections on port 7000
+gem5 Simulator System.  https://www.gem5.org
+gem5 is copyrighted software; use the --copyright option for details.
+
+gem5 version 23.0.0.1
+gem5 compiled Apr  1 2026 17:16:19
+gem5 started Apr 27 2026 22:21:54
+gem5 executing on vbox, pid 4491
+command line: /home/casp26p1/gem5/build/X86/gem5.opt -d /home/casp26p1/Downloads/Project1_SPEC-master/results_corners/470.lbm/small_line /home/casp26p1/gem5/configs/deprecated/example/se.py -c /home/casp26p1/Downloads/Project1_SPEC-master/470.lbm/src/benchmark -o '20 reference.dat 0 1 /home/casp26p1/Downloads/Project1_SPEC-master/470.lbm/data/100_100_130_cf_a.of' -I 100000000 --cpu-type=TimingSimpleCPU --caches --l2cache --l1d_size=128kB --l1i_size=128kB --l2_size=2MB --l1d_assoc=2 --l1i_assoc=2 --l2_assoc=2 --cacheline_size=32
+
+**** REAL SIMULATION ****
+src/sim/simulate.cc:194: info: Entering event queue @ 0.  Starting simulation...
+src/sim/mem_state.cc:443: info: Increasing stack size by one page.
+MAIN_printInfo:
+	grid size      : 100 x 100 x 130 = 1.30 * 10^6 Cells
+	nTimeSteps     : 20
+	result file    : reference.dat
+	action         : nothing
+	simulation type: channel flow
+	obstacle file  : /home/casp26p1/Downloads/Project1_SPEC-master/470.lbm/data/100_100_130_cf_a.of
+
+gem5 has encountered a segmentation fault!
+
+--- BEGIN LIBC BACKTRACE ---
+/home/casp26p1/gem5/build/X86/gem5.opt(+0xf6daf6) [0x558901cf5af6]
+/home/casp26p1/gem5/build/X86/gem5.opt(+0xf9628f) [0x558901d1e28f]
+/lib/x86_64-linux-gnu/libc.so.6(+0x3fdf0) [0x7efed304bdf0]
+/home/casp26p1/gem5/build/X86/gem5.opt(+0xeddc5c) [0x558901c65c5c]
+/home/casp26p1/gem5/build/X86/gem5.opt(+0xd77b20) [0x558901affb20]
+/home/casp26p1/gem5/build/X86/gem5.opt(+0xd8132e) [0x558901b0932e]
+/home/casp26p1/gem5/build/X86/gem5.opt(+0xd81a02) [0x558901b09a02]
+/home/casp26p1/gem5/build/X86/gem5.opt(+0xd737a4) [0x558901afb7a4]
+/home/casp26p1/gem5/build/X86/gem5.opt(+0xa64fd3) [0x5589017ecfd3]
+/home/casp26p1/gem5/build/X86/gem5.opt(+0xa6746b) [0x5589017ef46b]
+/home/casp26p1/gem5/build/X86/gem5.opt(+0xf83cc5) [0x558901d0bcc5]
+/home/casp26p1/gem5/build/X86/gem5.opt(+0xfb2ad8) [0x558901d3aad8]
+/home/casp26p1/gem5/build/X86/gem5.opt(+0xfb316e) [0x558901d3b16e]
+/home/casp26p1/gem5/build/X86/gem5.opt(+0x1551b3c) [0x5589022d9b3c]
+/home/casp26p1/gem5/build/X86/gem5.opt(+0x502bae) [0x55890128abae]
+/lib/x86_64-linux-gnu/libpython3.13.so.1.0(+0x16ee19) [0x7efed3d6ee19]
+/lib/x86_64-linux-gnu/libpython3.13.so.1.0(PyObject_Call+0x5e) [0x7efed3d112ee]
+/lib/x86_64-linux-gnu/libpython3.13.so.1.0(_PyEval_EvalFrameDefault+0x885) [0x7efed3e41ea5]
+/lib/x86_64-linux-gnu/libpython3.13.so.1.0(PyEval_EvalCode+0xd7) [0x7efed3e41547]
+/lib/x86_64-linux-gnu/libpython3.13.so.1.0(+0x23b580) [0x7efed3e3b580]
+/lib/x86_64-linux-gnu/libpython3.13.so.1.0(+0x16d471) [0x7efed3d6d471]
+/lib/x86_64-linux-gnu/libpython3.13.so.1.0(PyObject_Vectorcall+0x53) [0x7efed3d0f4c3]
+/lib/x86_64-linux-gnu/libpython3.13.so.1.0(_PyEval_EvalFrameDefault+0xfc3) [0x7efed3e425e3]
+/home/casp26p1/gem5/build/X86/gem5.opt(+0xf97b4c) [0x558901d1fb4c]
+/home/casp26p1/gem5/build/X86/gem5.opt(+0x4cd341) [0x558901255341]
+/lib/x86_64-linux-gnu/libc.so.6(+0x29ca8) [0x7efed3035ca8]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0x85) [0x7efed3035d65]
+/home/casp26p1/gem5/build/X86/gem5.opt(+0x4f40f1) [0x55890127c0f1]
+--- END LIBC BACKTRACE ---
+For more info on how to address this issue, please visit https://www.gem5.org/documentation/general_docs/common-errors/ 
+

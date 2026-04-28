@@ -1,0 +1,65 @@
+warn: The `get_runtime_isa` function is deprecated. Please migrate away from using this function.
+warn: The se.py script is deprecated. It will be removed in future releases of  gem5.
+warn: The `get_runtime_isa` function is deprecated. Please migrate away from using this function.
+Global frequency set at 1000000000000 ticks per second
+warn: No dot file generated. Please install pydot to generate the dot file and pdf.
+src/mem/dram_interface.cc:690: warn: DRAM device capacity (8192 Mbytes) does not match the address range assigned (512 Mbytes)
+src/base/statistics.hh:279: warn: One of the stats is a legacy stat. Legacy stat is a stat that does not belong to any statistics::Group. Legacy stat is deprecated.
+system.remote_gdb: Listening for connections on port 7000
+gem5 Simulator System.  https://www.gem5.org
+gem5 is copyrighted software; use the --copyright option for details.
+
+gem5 version 23.0.0.1
+gem5 compiled Apr  1 2026 17:16:19
+gem5 started Apr 27 2026 21:37:36
+gem5 executing on vbox, pid 4046
+command line: /home/casp26p1/gem5/build/X86/gem5.opt -d /home/casp26p1/Downloads/Project1_SPEC-master/results_corners/401.bzip2/l1_heavy /home/casp26p1/gem5/configs/deprecated/example/se.py -c /home/casp26p1/Downloads/Project1_SPEC-master/401.bzip2/src/benchmark -o /home/casp26p1/Downloads/Project1_SPEC-master/401.bzip2/data/input.program -I 100000000 --cpu-type=TimingSimpleCPU --caches --l2cache --l1d_size=256kB --l1i_size=256kB --l2_size=1MB --l1d_assoc=2 --l1i_assoc=2 --l2_assoc=2 --cacheline_size=64
+
+**** REAL SIMULATION ****
+src/sim/simulate.cc:194: info: Entering event queue @ 0.  Starting simulation...
+src/sim/mem_state.cc:443: info: Increasing stack size by one page.
+spec_init
+Loading Input Data
+Duplicating 8070616 bytes
+build/X86/arch/x86/generated/exec-ns.cc.inc:27: warn: instruction 'prefetch_nta' unimplemented
+build/X86/arch/x86/generated/exec-ns.cc.inc:27: warn: instruction 'prefetch_nta' unimplemented
+src/arch/generic/debugfaults.hh:145: warn: MOVNTI: Ignoring non-temporal hint, modeling as cacheable!
+Duplicating 16141232 bytes
+Duplicating 32282464 bytes
+gem5.opt: src/mem/cache/base.cc:260: virtual void gem5::BaseCache::handleTimingReqHit(gem5::PacketPtr, gem5::CacheBlk*, gem5::Tick): Assertion `pkt->isWrite()' failed.
+Program aborted at tick 143469920500
+--- BEGIN LIBC BACKTRACE ---
+/home/casp26p1/gem5/build/X86/gem5.opt(+0xf6daf6) [0x562b2019eaf6]
+/home/casp26p1/gem5/build/X86/gem5.opt(+0xf9641d) [0x562b201c741d]
+/lib/x86_64-linux-gnu/libc.so.6(+0x3fdf0) [0x7fa36d24bdf0]
+/lib/x86_64-linux-gnu/libc.so.6(+0x9495c) [0x7fa36d2a095c]
+/lib/x86_64-linux-gnu/libc.so.6(gsignal+0x12) [0x7fa36d24bcc2]
+/lib/x86_64-linux-gnu/libc.so.6(abort+0x22) [0x7fa36d2344ac]
+/lib/x86_64-linux-gnu/libc.so.6(__assert_perror_fail+0x0) [0x7fa36d234420]
+/home/casp26p1/gem5/build/X86/gem5.opt(+0x2f7d4d) [0x562b1f528d4d]
+/home/casp26p1/gem5/build/X86/gem5.opt(+0xd786fe) [0x562b1ffa96fe]
+/home/casp26p1/gem5/build/X86/gem5.opt(+0xd73e97) [0x562b1ffa4e97]
+/home/casp26p1/gem5/build/X86/gem5.opt(+0xa05990) [0x562b1fc36990]
+/home/casp26p1/gem5/build/X86/gem5.opt(+0xd7c45e) [0x562b1ffad45e]
+/home/casp26p1/gem5/build/X86/gem5.opt(+0xd782f1) [0x562b1ffa92f1]
+/home/casp26p1/gem5/build/X86/gem5.opt(+0xf83cc5) [0x562b201b4cc5]
+/home/casp26p1/gem5/build/X86/gem5.opt(+0xfb2ad8) [0x562b201e3ad8]
+/home/casp26p1/gem5/build/X86/gem5.opt(+0xfb316e) [0x562b201e416e]
+/home/casp26p1/gem5/build/X86/gem5.opt(+0x1551b3c) [0x562b20782b3c]
+/home/casp26p1/gem5/build/X86/gem5.opt(+0x502bae) [0x562b1f733bae]
+/lib/x86_64-linux-gnu/libpython3.13.so.1.0(+0x16ee19) [0x7fa36df6ee19]
+/lib/x86_64-linux-gnu/libpython3.13.so.1.0(PyObject_Call+0x5e) [0x7fa36df112ee]
+/lib/x86_64-linux-gnu/libpython3.13.so.1.0(_PyEval_EvalFrameDefault+0x885) [0x7fa36e041ea5]
+/lib/x86_64-linux-gnu/libpython3.13.so.1.0(PyEval_EvalCode+0xd7) [0x7fa36e041547]
+/lib/x86_64-linux-gnu/libpython3.13.so.1.0(+0x23b580) [0x7fa36e03b580]
+/lib/x86_64-linux-gnu/libpython3.13.so.1.0(+0x16d471) [0x7fa36df6d471]
+/lib/x86_64-linux-gnu/libpython3.13.so.1.0(PyObject_Vectorcall+0x53) [0x7fa36df0f4c3]
+/lib/x86_64-linux-gnu/libpython3.13.so.1.0(_PyEval_EvalFrameDefault+0xfc3) [0x7fa36e0425e3]
+/home/casp26p1/gem5/build/X86/gem5.opt(+0xf97b4c) [0x562b201c8b4c]
+/home/casp26p1/gem5/build/X86/gem5.opt(+0x4cd341) [0x562b1f6fe341]
+/lib/x86_64-linux-gnu/libc.so.6(+0x29ca8) [0x7fa36d235ca8]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0x85) [0x7fa36d235d65]
+/home/casp26p1/gem5/build/X86/gem5.opt(+0x4f40f1) [0x562b1f7250f1]
+--- END LIBC BACKTRACE ---
+For more info on how to address this issue, please visit https://www.gem5.org/documentation/general_docs/common-errors/ 
+
